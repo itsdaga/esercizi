@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-    <form>
+  </head>
+  <body>
+    <form method="GET" action="script.php">
+      <!-- use get not post-->
+      Come ti chiami git? <input type="text" required /><br />
+      Dammi il tuo numero o ti sparo <input type="text" /><br />
 
-        Come ti chiami git? <input type="text" required><br>
-        Dammi il tuo numero o ti sparo <input type="text">
-        Gender
-        <input name="gender" type="radio">male<br>
-        <input name="gender" type="radio">female<br>
-        <input name="gender" type="radio">Subumano<br>
-        <input type="submit" value="Deh manda sto form">
-        <input type="reset">
+      Scegli il tuo Gender<br />
 
-        Cars:
-            <select>    
-                <option value="volvo">Volvo</option>
-                <option value="ferrari">Ferrari</option>
-                <option value="cavallo">Cavello</option>
-            </select>
+      <input name="gender" type="radio" value="male" />male<br />
+      <input name="gender" type="radio" value="famale" />female<br />
+      <input
+        name="gender"
+        type="radio"
+        value="genderfluido"
+      />genderfluido<br />
 
-        <input type="password" min="5">  
+      Cars:
+      <select>
+        <option value="volvo">Volvo</option>
+        <br />
+        <option value="ferrari">Ferrari</option>
+        <br />
+        <option value="cavallo">Cavallo</option>
+        <br /></select
+      ><br />
 
+      <input type="checkbox" name="cat" value="gatto" />Gatto<br />
+      <input type="checkbox" name="dog" value="cane" />cane<br />
+      <input
+        type="checkbox"
+        name="giorgia meloni"
+        value="giorgia meloni"
+      />Giorgia meloni<br />
+
+      password: <input type="password" min="5" />
+      <br />
+      <input type="submit" value="Deh manda sto form" />
+      <input type="reset" />
     </form>
-
-</body>
+  </body>
 </html>
