@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    box-shadow: 2px;
+    text-align: center;
+    border-radius: 80%;
+    padding: 2px 2px 2px 2px;
+    border: 5px solid purple;
+}
+
+ul, p {
+    background: purple;
+}
+
+li{
+    color: white;
+}
