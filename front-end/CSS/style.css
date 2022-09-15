@@ -28,7 +28,7 @@ img{
     border: 5px solid red;
     display: inline-block;
     padding: 20px;
-    margin: 20px;
+    margin: 21px;
 }
 
 /*
@@ -37,3 +37,20 @@ em => relativo alla font size dell'elemento
 vw => relativ all'1% della vista
 % relativo al parent
 */
+
+/* Selettori: 
+.classe
+#id
+* (tutti gli elementi
+element, element ( si applica su più classi)
+elmentex elementy (tutti gli elementiy che sono dentro elementx*
+h2 > p  tutti i p parenti di h2
+h2 + p tutti i p esattamente dopo h2
+:hover cosa accade dopo
+:last-child solo ultimo figio
+:first-child solo primo figlio
+
+-specifity 
+-importance
+-order ss
+*/  
