@@ -1,0 +1,45 @@
+body,
+html {
+
+    width: auto;
+    height: 100%;
+
+    font-family: "roboto", "montserrat"; 
+    color: white;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(dl.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 20px;
+    opacity: 1;  
+}
+
+.btn{
+
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 2px white;
+    border: 2px solid white;
+
+    text-transform: uppercase;
+
+}
+
+.buffer{
+    height: 1rem;
+}
+
+footer{
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+
+    font-size: 0.7rem;
+}
+
