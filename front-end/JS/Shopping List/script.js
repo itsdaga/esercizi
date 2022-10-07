@@ -1,13 +1,39 @@
-var button = document.querySelector("#pushButton");
-var list = document.querySelector("#list");
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
+var list = document.querySelector("ul");
 
-button.addEventListener("click", addElement);
+function createListElement() {
+  var li = document.createElement("li");
 
-function addElement() {
+  li.appendChild(document.createTextNode(input.value));
+  li.classList.add("listElement");
 
-   
-    elem = document.createElement("li")
-    elem.appendChild(document.createElement("br"));
-    elem = document.createTextNode(document.querySelector("input").value)
-    list.appendChild(elem);
+  ul.appendChild(li);
+
+  input.value = "";
 }
+
+function taskDoneUndon(){
+    listElements.toggleClass("done");
+}
+
+list.addEventListener("click", function(e){
+
+    console.log(e.target.tagName);
+
+    if (e.target.tagName === "LI"){
+        e.target.classList.toggle("done");
+    }
+
+})
+
+button.addEventListener("click", function () {
+  createListElement();
+});
+
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    createListElement();
+  }
+});
