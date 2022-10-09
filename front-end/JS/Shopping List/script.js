@@ -9,7 +9,8 @@ function createListElement() {
   var li = document.createElement("li");
   var span = document.createElement("span");
 
-  
+  span.appendChild(document.createTextNode("X "));
+  span.classList.add("deleteBtn");
 
   li.appendChild(document.createTextNode(input.value));
   li.classList.add("listElement");
@@ -17,7 +18,7 @@ function createListElement() {
   
  
   ul.appendChild(li);
-  ul.appendChild(document.createTextNode("x"));
+  
 
 
   input.value = "";
